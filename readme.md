@@ -1,4 +1,5 @@
-v2raya等deb包为24/7/9能获取到的版本，除非有重大bug，本仓库不主动更新，请自行寻找最新版包
+> v2raya等deb包为24/7/9能获取到的版本，除非有重大bug，本仓库不主动更新，请自行寻找最新版包
+> Update: 于2025/9/3更新了三件套的版本
 
 如遇到v2ray等重大安全bug欢迎提pr
 
@@ -13,9 +14,9 @@ v2raya等deb包为24/7/9能获取到的版本，除非有重大bug，本仓库�
 
 ```bash
 
-sudo apt install /root/autodl-tmp/autodl_proxy/installer_debian_x64_2.2.5.6.deb
-sudo apt install /root/autodl-tmp/autodl_proxy/v2ray_5.16.1_amd64.deb
-sudo apt install /root/autodl-tmp/autodl_proxy/xray_1.8.16_amd64.deb
+sudo apt install /root/autodl-tmp/autodl_proxy/installer_debian_x64_2.2.7.1.deb
+sudo apt install /root/autodl-tmp/autodl_proxy/v2ray_5.37.0_amd64.deb
+sudo apt install /root/autodl-tmp/autodl_proxy/xray_25.8.3_amd64.deb
 
 v2raya
 ```
@@ -102,3 +103,9 @@ poff
 ```
 
 这样，您就可以方便地在终端中控制代理的开关，而无需每次都编辑脚本文件。
+
+# 设置开机自启动
+```bash
+sudo systemctl start v2raya.service #启动
+sudo systemctl enable v2raya.service #自启动
+```
